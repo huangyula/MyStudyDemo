@@ -1,0 +1,13 @@
+ListView分页：
+一.背景：数据过多，不可能一次获取并显示全部数据,需要多次请求,加载数据
+二.目标：实现ListView向上滑动，加载更多数据
+三.步骤：
+1.编写ListView底部布局footer.xml,ListView item布局
+2.自定义LoadListView,继承ListView,OnScrollListener
+this.addFooterView(footer);
+this.setOnScrollListener(this)；
+自定义加载更多监听器，需实现onLoadMore
+实现OnScrollListener中的onScrollStateChanged,onScroll
+3.使用
+
+
